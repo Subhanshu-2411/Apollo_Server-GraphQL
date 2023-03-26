@@ -11,7 +11,7 @@ const typedefs = `
     }
     
     type Mutation {
-        addProduct(id: String! name: String! isInStock: Boolean!): Boolean
+        addProduct(id: Int! name: String! isInStock: Boolean!): Boolean
     }
 `
 
