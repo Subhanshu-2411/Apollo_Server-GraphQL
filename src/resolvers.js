@@ -77,8 +77,8 @@ const resolvers = {
         products: () => products
     },
     Mutation: {
-        addProducts: (id, name, isInStock) => {
-            products.push({ id, name, isInStock });
+        addProducts: (_, data) => {
+            products.push(data);
             return true;
         },
     }
