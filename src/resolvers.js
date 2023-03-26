@@ -75,6 +75,12 @@ const products = [
 const resolvers = {
     Query: {
         products: () => products
+    },
+    Mutation: {
+        addProducts: ({id, name, isInStock}) => {
+            products.push({ id, name, isInStock });
+            return true;
+        },
     }
 }
 

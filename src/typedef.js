@@ -9,6 +9,10 @@ const typedefs = `
     type Query {
         products: [Product]
     }
+    
+    type Mutation {
+        addProduct(id: String! name: String! isInStock: Boolean!): Boolean
+    }
 `
 
 module.exports = typedefs
