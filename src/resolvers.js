@@ -72,9 +72,9 @@ const products = [
     },
 ]
 
-resolvers = {
+const resolvers = {
     Query: {
-        products: () => []
+        products: () => products
     }
 }
 

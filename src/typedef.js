@@ -9,7 +9,6 @@ const typedefs = `
     type Query {
         products: [Product]
     }
-        
 `
 
 module.exports = typedefs

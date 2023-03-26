@@ -12,7 +12,7 @@ const server = new ApolloServer(
 )
 
 const apolloStandaloneServer = startStandaloneServer(server, {
-    listen: 6000,
+    listen: 6003,
 })
 apolloStandaloneServer.then(() => {
     console.log('Server Started');
